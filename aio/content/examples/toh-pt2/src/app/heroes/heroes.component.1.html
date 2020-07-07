@@ -2,7 +2,7 @@
 <h2>My Heroes</h2>
 <ul class="heroes">
   <li>
-    <span class="badge">{{hero.id}}</span> {{hero.name}}
+    <span class="badge">{{hero[0].id}}</span> {{hero[0].name}}
   </li>
 </ul>
 <!-- #enddocregion list -->
@@ -10,7 +10,7 @@
 <!-- #docregion li -->
   <li *ngFor="let hero of heroes">
 <!-- #enddocregion li -->
-
+对象语法
 <!-- #docregion selectedHero-click -->
 <li *ngFor="let hero of heroes" (click)="onSelect(hero)">
 <!-- #enddocregion selectedHero-click -->
