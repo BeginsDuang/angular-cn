@@ -940,7 +940,7 @@ export class Router {
     return this.serializeUrl(this.currentUrlTree);
   }
 
-  /** The current Navigation object if one exists */
+  /** 获取当前导航对象（如果存在） */
   getCurrentNavigation(): Navigation|null {
     return this.currentNavigation;
   }
